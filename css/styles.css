@@ -1,0 +1,166 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&family=Poppins:wght@300;500&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Nunito:wght@300;400&family=Poppins:wght@300;400;500&family=Roboto:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background: url('../assets/hero-image.svg') center center/cover no-repeat; */
+}
+
+:root {
+    --bg-color: #FFF;
+    --text-color: #000;
+    --logo-image: url('../assets/logo-lightmode.png')
+}
+
+
+.darkmode {
+    --bg-color: #000;
+    --text-color: #FFF;
+    --logo-image: url('../assets/logo-darkmode.png')
+}
+
+/* i tag for darkmode symbol */
+i{
+  padding: 1rem;
+  margin: 1rem;
+  cursor: pointer;
+}
+body {
+
+    /* FONTS */
+    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Nunito', sans-serif; */
+    /* font-family: 'Poppins', sans-serif; */
+    /* font-family: 'Roboto', sans-serif; */
+
+    /* IMAGE BACKGROUND */
+    /* background: url('../assets/hero-image.jpg') center center/cover no-repeat; */
+    height: 100%;
+
+    /* PURPLE BACKGROUND */
+    /* background-color: hsl(250,28%,12%); */
+
+    background-color: var(--bg-color);
+    color: var(--text-color);
+
+    /* box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.3); */
+    /* height: 100vh; */
+}
+
+.logo{
+    width:10%;
+}
+.logo img {
+    width: 100%;
+}
+nav ul li i {
+    font-size: 25px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.125 rem;
+    width: 80%;
+    margin: auto;
+}
+
+.nav li{
+  /*color: var(--light-color-text);    Haven't specified what light color text is in root*/
+}
+
+
+.nav li a {
+    color: var(--text-color);
+    font-size: 1.2rem;
+    font-weight: 500;
+    /* letter-spacing: 2px; */
+    padding:1rem;
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.nav li a:hover {
+    background-color: #E4382C;
+    border-radius: 5px;
+    color: #FFF;
+    transition: ease-in 0.25s;
+}
+
+/* The Photography Club Title */
+.TPC{
+    font-weight: bolder;
+}
+
+/* HERO SECTION */
+.hero-section {
+    height: 100vh;
+    width: 80%;
+    margin: auto;
+    padding: 4rem 1.2rem 4rem 1.2rem;
+    color: var(--text-color);
+    display: flex;
+    justify-content: space-around;
+    /* margin: 50px 0; */
+    /* background: url('../assets/hero-image.png') center center/cover no-repeat; */
+
+}
+
+.hero-section img {
+    width: 80%;
+    height: 70%;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+}
+
+.hero-text p {
+    margin-top: 30px;
+    font-size: 1.25rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+/* Contact Us */
+.hero-text a {
+    background-color: #E4382C;
+    /* width: 50%; */
+    padding:2% 1% 2% 3%;
+    text-decoration: none;
+    font-size: 1.75rem;
+    border-radius: 5px;
+    color: #FFF;
+    /* color: hsl(250,28%,12%); */
+    align-items: center;
+}
+
+/* Footer */
+
+.mainfooter{
+    background-color: #24262b;
+    padding: 2%;
+}
+
+.container{
+
+    margin:auto;
+}
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.footer-pad h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 15%;
+	font-weight: 500;
+	position: relative;
+}
